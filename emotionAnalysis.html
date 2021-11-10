@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="99c54c9d3dce4947b0ac45bed90893de" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_99c54c9d3dce4947b0ac45bed90893de = echarts.init(
+            document.getElementById('99c54c9d3dce4947b0ac45bed90893de'), 'white', {renderer: 'canvas'});
+        var option_99c54c9d3dce4947b0ac45bed90893de = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "blue",
+        "purple",
+        "orange"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "positive",
+                    "value": 2084
+                },
+                {
+                    "name": "negative",
+                    "value": 789
+                },
+                {
+                    "name": "neutral",
+                    "value": 1037
+                }
+            ],
+            "radius": [
+                "0%",
+                "75%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{b}: {c} ({d}%)"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "positive",
+                "negative",
+                "neutral"
+            ],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    }
+};
+        chart_99c54c9d3dce4947b0ac45bed90893de.setOption(option_99c54c9d3dce4947b0ac45bed90893de);
+    </script>
+</body>
+</html>
